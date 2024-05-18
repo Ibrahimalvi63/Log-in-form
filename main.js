@@ -17,6 +17,7 @@ function openPopup() {
 function closePopup() {
   popup.classList.remove('open-popup');
   loading.classList.add('visible');
+  container.classList.add('blur');
 }
 
 
