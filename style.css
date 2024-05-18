@@ -1,0 +1,241 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: lightblue;
+  }
+  
+  .email{
+    font-size: 20px;
+    width: 45%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
+  
+  .password-box{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+     border: none;
+    outline: none;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
+  
+  #password{
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    
+  }
+  
+  .eror{
+    border: 2px solid red;
+    animation: shake 0.1s linear infinite;
+  }
+  @keyframes shake{
+    0%{
+      transform: translateX(0px);
+    }
+    
+    25%{
+      transform: translateX(2px);
+    }
+    
+    50%{
+      transform: translateX(0px);
+    }
+    
+    75%{
+      transform: translateX(-2px);
+    }
+    
+    100%{
+      transform: translateX(0px);
+    }
+  }
+  
+  
+  
+  
+  #Submit-btn{
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: lawngreen;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: none;
+    outline: none;
+    margin: 10px;
+  }
+  
+  
+  
+  .loading{
+    height: 100px;
+    width: 100px;
+    
+    border-width: 20px;
+    
+    border-style: solid;
+    border-top-color: blue;
+    border-left-color: lightgray;
+    border-right-color: lightgray;
+    border-bottom-color: lightgray;
+    position: absolute;
+    top: 10%;
+    border-radius: 50%;
+    
+    animation: animate 1.2s ease-in-out infinite;
+    visibility: hidden;
+  }
+  
+  .visible{
+    
+    visibility: visible;
+  }
+  
+  @keyframes animate{
+    0%{
+      transform: rotate(0deg);
+    }
+    
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  
+  .popup{
+    width: 400px;
+    border-radius: 10;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    text-align: center;
+    padding: 0 30px 30px;
+    transform: translate(-50%, -50%) scale(0.1);
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+   visibility: hidden;
+   transition: transform 0.3s, top 0.3s;
+  }
+  .open-popup{
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+  }
+  .close-popup{
+    top: 0%;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+  }
+  
+  
+  
+  .popup img{
+   margin-top: -50px;
+    height: 100px;
+    width: 100px;
+  }
+  
+  .popup h2{
+    font-size: 40px;
+    padding: 20px;
+  }
+  
+  .popup p{
+    padding: 20px;
+    font-size: 18px;
+  }
+  
+  .popup button{
+    width: 90%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: lawngreen;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  @media screen and (max-width: 796px) {
+    .popup{
+      width: 200px;
+    }
+    
+    
+  .popup img{
+   margin-top: -25px;
+    height: 50px;
+    width: 50px;
+  }
+    
+    .popup h2{
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  .popup p{
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+    .popup button{
+    width: 90%;
+    padding: 5px;
+    font-size: 14px;
+    }
+    
+    
+    #Submit-btn{
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    }
+    
+   .email{
+    font-size: 14px;
+    width: 60%;
+    padding: 5px;
+    margin: 5px;
+   }
+   .password-box{
+    width: 60%;
+    padding: 5px;
+    margin: 5px;
+   }
+    
+    #password{
+    font-size: 14px;
+    width: 100%;
+    
+   }
+   .loading{
+    height: 50px;
+    width: 50px;
+    
+    border-width: 10px;
+   }
+    
+    
+  }

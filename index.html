@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title></title>
+</head>
+
+<body>
+  
+  
+  <div class="container">
+    <h1>Log in</h1>
+    <p>Enter your Email and Password to login.</p>
+    
+    
+    <input type="email" class="email" placeholder="Email">
+    
+    
+   <div class="password-box">
+      <input type="password" id="password" placeholder="password">
+      <i class="fa-solid fa-eye-slash" id="icon"></i>
+      
+   </div>
+    
+    
+      <button type="submit" id="Submit-btn">Submit</button>
+      
+    <div class="loading"></div>
+    
+    <div class="popup">
+      <img src="tick.png" alt="tick">
+      <h2>Thank You</h2>
+      <p>Your file is submitted successfully. Thanks a lot</p>
+      <button type="button" id="popup-btn" onclick="closePopup()">Ok</button>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+<script src="main.js">main.js</script>
+</body>
+
+</html>
